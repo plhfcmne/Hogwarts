@@ -10,20 +10,10 @@ public class Hufflepuff extends HogwartsStudents {
         this.honesty = honesty;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     public int ability() {
-        return diligence+loyalty+honesty;
+        return diligence + loyalty + honesty;
     }
+
     public void compareHufflepuff(Hufflepuff hufflepuff) {
         int ability1 = ability();
         int ability2 = hufflepuff.ability();
@@ -53,8 +43,9 @@ public class Hufflepuff extends HogwartsStudents {
             );
         }
     }
+
     @Override
     public String toString() {
-        return String.format("%s; трудолюбие: %d; верность: %d; честность: %d", super.toString(),diligence,loyalty,honesty);
+        return String.format("%s; трудолюбие: %d; верность: %d; честность: %d", super.toString(), diligence, loyalty, honesty);
     }
 }
