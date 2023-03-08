@@ -10,23 +10,13 @@ public class Griffindor extends HogwartsStudents {
         this.bravery = bravery;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     public int ability() {
-        return nobility+honor+bravery;
+        return nobility + honor + bravery;
     }
+
     public void compareGriffindor(Griffindor griffindor) {
-        int ability1=ability();
-        int ability2=griffindor.ability();
+        int ability1 = ability();
+        int ability2 = griffindor.ability();
         if (ability1 > ability2) {
             System.out.printf(
                     " %s лучший Гриффиндорец,чем  %s: %d VS %d%n ",
@@ -53,8 +43,9 @@ public class Griffindor extends HogwartsStudents {
             );
         }
     }
+
     @Override
     public String toString() {
-        return String.format("%s; благородство: %d; честь: %d; храбрость: %d", super.toString(),nobility,honor,bravery);
+        return String.format("%s; благородство: %d; честь: %d; храбрость: %d", super.toString(), nobility, honor, bravery);
     }
 }

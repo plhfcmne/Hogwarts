@@ -1,5 +1,4 @@
 import java.util.Random;
-
 public class Main {
     private static final Random RANDOM = new Random();
 
@@ -12,7 +11,6 @@ public class Main {
                 RANDOM.nextInt(100)
         );
     }
-
     private static Slytherin generateSlytherinStudent(String name) {
         return new Slytherin(name,
                 RANDOM.nextInt(100),
@@ -23,7 +21,6 @@ public class Main {
                 RANDOM.nextInt(100),
                 RANDOM.nextInt(100));
     }
-
     private static Ravenclaw generateRavenclawStudent(String name) {
         return new Ravenclaw(name,
                 RANDOM.nextInt(100),
